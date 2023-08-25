@@ -9,7 +9,7 @@ let componentsFactory = new Components({
     loadPath: "https://staging-static.keen.io/ruc/en/{{ns}}.json",
     language: "en",
   },
-  accessTokenUrl: "https://gx-chargify-poc-1.vercel.app/api/auth_v2", // REPLACE WITH YOUR AUTHENTICATION ENDPOINT URL
+  accessTokenUrl: "https://gx-chargify-poc-1.vercel.app/api/auth_v2", //"http://localhost:3000/api/auth_v2", , // REPLACE WITH YOUR AUTHENTICATION ENDPOINT URL
 
   theme: {
     colors: ColorPalette,
@@ -26,6 +26,12 @@ provide("componentsFactory", componentsFactory);
   <div>
     <h1>Maxio Components</h1>
   </div>
+  <p>
+    Reference ID (Your App): od_poc1_customer_reference_1<br />
+    <a href="https://greencrosstest-sit.chargify.com/customers/70369781"
+      >https://greencrosstest-sit.chargify.com/customers/70369781</a
+    >
+  </p>
   <div class="wrapper">
     <router-link to="/customer-details">Go to Customer Details</router-link>
     <router-link to="/subscription-manager"
@@ -38,7 +44,7 @@ provide("componentsFactory", componentsFactory);
 
 <style>
 .wrapper {
-  margin: 16px 0;
+  margin: 0 0 16px 0;
   display: flex;
   flex-direction: column;
   align-items: start;
