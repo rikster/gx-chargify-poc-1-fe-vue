@@ -9,8 +9,8 @@ let componentsFactory = new Components({
     loadPath: "https://staging-static.keen.io/ruc/en/{{ns}}.json",
     language: "en",
   },
-  //accessTokenUrl: "https://gx-chargify-poc-1.vercel.app/api/auth_v2",
-  accessTokenUrl: "http://localhost:3000/api/auth_v2", // REPLACE WITH YOUR AUTHENTICATION ENDPOINT URL
+  accessTokenUrl: "https://gx-chargify-poc-1.vercel.app/api/auth_v2",
+  //accessTokenUrl: "http://localhost:3000/api/auth_v2", // REPLACE WITH YOUR AUTHENTICATION ENDPOINT URL
 
   theme: {
     colors: ColorPalette,
