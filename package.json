@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@maxio-com/self-service": "1.9.0",
+    "dotenv": "^16.3.1",
     "vue": "^3.2.45",
     "vue-router": "4"
   },

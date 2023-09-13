@@ -1,8 +1,15 @@
 <script setup>
-import { provide } from "vue";
+import { provide, onMounted } from "vue";
 import { Components } from "@maxio-com/self-service";
 import { ButtonSettings } from "./styles/Button.js";
 import { ColorPalette } from "./styles/ColorPallete.js";
+// import dotenv from "dotenv";
+
+// onMounted(() => {
+//   dotenv.config();
+// });
+
+//const API_URL = process.env.VUE_APP_NEXT_PUBLIC_API_URL;
 
 let componentsFactory = new Components({
   i18nSettings: {
@@ -11,6 +18,7 @@ let componentsFactory = new Components({
   },
   accessTokenUrl: "https://gx-chargify-poc-1.vercel.app/api/auth_v2",
   //accessTokenUrl: "http://localhost:3000/api/auth_v2", // REPLACE WITH YOUR AUTHENTICATION ENDPOINT URL
+  //accessTokenUrl: `${API_URL}/api/auth_v2`,
 
   theme: {
     colors: ColorPalette,
@@ -28,7 +36,7 @@ provide("componentsFactory", componentsFactory);
     <h1>Maxio Components</h1>
   </div>
   <p>
-    Reference ID (Your App): od_poc1_customer_reference_1<br />
+    GX RXWorks Reference ID in Maxio:<br />
     <a href="https://greencrosstest-sit.chargify.com/customers/70864704"
       >https://greencrosstest-sit.chargify.com/customers/70864704</a
     >
