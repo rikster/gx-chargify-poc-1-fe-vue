@@ -1,10 +1,12 @@
-"# gx-chargify-poc-1-fe-vue" 
-Example of how to use Vue 3 with self-service components.
+"gx-chargify-poc-1-fe-vue" 
+Example of how to use Vue 3 with self-service components on Chargify (now Maxio)
 
-In order to run this example you need to have Node.js installed.
+https://gx-chargify-poc-1-fe-vue.vercel.app/
+
+To run this example you need to have Node.js installed.
 
 ## Installation
-In order to use components fill gaps in components factory in App.vue:
+To use components fill gaps in the components factory in App.vue:
 `accessTokenUrl`,`apiUrl` and `i18Settings`.
 
 ```bash
